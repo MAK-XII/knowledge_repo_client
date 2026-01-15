@@ -1,0 +1,182 @@
+/* ==========================================
+   CSS Variables
+   Theme colors and design tokens
+   ========================================== */
+
+:root {
+    /* Midnight Modern Palette - Dark Mode Default */
+    /* Backgrounds */
+    --bg-darkest: #0f172a;
+    /* Slate 900 */
+    --bg-dark: #1e293b;
+    /* Slate 800 */
+    --bg-card: #334155;
+    /* Slate 700 */
+    --bg-light: #475569;
+    /* Slate 600 */
+
+    /* Typography */
+    --text-primary: #f8fafc;
+    /* Slate 50 */
+    --text-secondary: #cbd5e1;
+    /* Slate 300 */
+    --text-muted: #94a3b8;
+    /* Slate 400 */
+
+    /* Accents */
+    --primary: #3b82f6;
+    /* Blue 500 */
+    --primary-hover: #2563eb;
+    /* Blue 600 */
+    --primary-light: #60a5fa;
+    /* Blue 400 */
+
+    --accent: #0ea5e9;
+    /* Sky 500 */
+    --accent-hover: #0284c7;
+    /* Sky 600 */
+
+    /* Functional Colors */
+    --success: #10b981;
+    /* Emerald 500 */
+    --warning: #f59e0b;
+    /* Amber 500 */
+    --danger: #ef4444;
+    /* Red 500 */
+    --info: #3b82f6;
+    /* Blue 500 */
+
+    --white-real: #ffffff;
+    --black-real: #000000;
+
+    /* Mappings for existing components */
+    --off-white: var(--bg-darkest);
+    --white: var(--bg-dark);
+    --light-gray: var(--bg-card);
+    --medium-gray: var(--bg-light);
+
+    /* Missing mappings fixed for contrast */
+    --primary-dark: var(--text-primary);
+    /* Labels were invisible */
+    --dark-gray: var(--text-muted);
+    /* Meta text */
+    --primary-lighter: var(--primary-light);
+    --primary-lightest: rgba(59, 130, 246, 0.1);
+    /* Subtle blue tint */
+
+    --neon-purple: var(--primary);
+    --neon-pink: var(--accent);
+    --neon-blue: var(--info);
+
+    --dark-blue: var(--bg-darkest);
+    --dark-blue-light: var(--bg-dark);
+    --dark-blue-lighter: var(--bg-card);
+
+    --text-dark: var(--text-primary);
+    --text-light: var(--text-primary);
+
+    /* Shadows & Transitions */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s ease;
+
+    /* React Component Variable Mappings */
+    --bg-primary: var(--bg-darkest);
+    --bg-secondary: var(--bg-dark);
+    --bg-tertiary: var(--bg-card);
+    --border-color: var(--bg-light);
+    --accent-blue: var(--primary);
+    --accent-purple: #8b5cf6;
+}
+
+/* Light Mode Variables */
+body.light-mode {
+    /* Light backgrounds */
+    --bg-darkest: #f8fafc;
+    --bg-dark: #f1f5f9;
+    --bg-card: #ffffff;
+    --bg-light: #e2e8f0;
+
+    /* Dark text for light mode */
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+
+    /* Keep accent colors the same */
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --primary-light: #60a5fa;
+
+    /* Component mappings for light mode */
+    --off-white: #f8fafc;
+    --white: #ffffff;
+    --light-gray: #f1f5f9;
+    --medium-gray: #cbd5e1;
+    --dark-gray: #64748b;
+
+    --primary-dark: #1e40af;
+    --text-dark: #0f172a;
+    --text-light: #ffffff;
+
+    --dark-blue: #1e3a8a;
+    --dark-blue-light: #1e40af;
+    --dark-blue-lighter: #3b82f6;
+
+    /* Lighter shadows for light mode */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+
+    /* React Component Variable Mappings */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f1f5f9;
+    --border-color: #e2e8f0;
+}
+
+/* Dark Mode Variables - Darker palette for less eye strain */
+body.dark-mode {
+    /* Backgrounds - Darker values */
+    --bg-darkest: #0a0f1a;
+    --bg-dark: #111827;
+    --bg-card: #1e293b;
+    --bg-light: #334155;
+
+    /* Typography - Slightly less bright for comfort */
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Background mappings */
+    --off-white: #0a0f1a;
+    --white: #111827;
+    --light-gray: #1e293b;
+    --medium-gray: #334155;
+    --dark-gray: #64748b;
+
+    --primary-dark: #e2e8f0;
+    --text-dark: #e2e8f0;
+    --text-light: #f1f5f9;
+
+    --dark-blue: #0a0f1a;
+    --dark-blue-light: #111827;
+    --dark-blue-lighter: #1e293b;
+
+    /* Shadows */
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
+
+    /* Component mappings - Darker */
+    --bg-primary: #0a0f1a;
+    --bg-secondary: #111827;
+    --bg-tertiary: #1a2332;
+    --border-color: #2d3748;
+
+    /* Input-specific colors - Darker */
+    --input-bg: #0f172a;
+    --input-border: #1e293b;
+    --input-focus-border: #3b82f6;
+}
